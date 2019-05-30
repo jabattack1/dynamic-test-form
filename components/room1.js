@@ -238,7 +238,5 @@ class Room1 extends React.Component{
 
 export default Room1;
 
-export twoCallsAdult;
-
 
 
