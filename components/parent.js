@@ -135,6 +135,7 @@ class Parent extends React.Component {
 	  	if(this.props.peter !== null){
 
 	  		let chips = this.props.peter;
+	  		console.log(this.state.checked);
 
 	  		if(this.state.checked === 2){
 	  		children = 
@@ -219,8 +220,8 @@ class Parent extends React.Component {
 	    return(
 	    	<gridWrap>
 	    		{children}
-				<Submit type='button' name='submit' id='submit' onClick={() => this.storeStuff()}>Submit</Submit>
-				<Clear type='button' name='clear' id='clear' onClick={() => this.eraseStuff()}>Clear</Clear>
+				<Submit type='button' onClick={() => this.storeStuff()}>Submit</Submit>
+				<Clear type='button' onClick={() => this.eraseStuff()}>Clear</Clear>
 			</gridWrap>
 		)
 	} 

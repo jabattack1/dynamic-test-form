@@ -11,7 +11,7 @@
     "react-dom": "^16.8.6",
     "react-select": "^2.4.3",
     "react-test-renderer": "^16.8.6",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
