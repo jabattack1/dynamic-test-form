@@ -216,7 +216,6 @@ class Parent extends React.Component {
 	  		}
 		}
 
-
 	    return(
 	    	<gridWrap>
 	    		{children}

@@ -91,19 +91,19 @@ class Room1 extends React.Component{
 								<P>Adults</P>
 								<P>(18+)</P>
 								<div>
-								<select id='selectionAdults' value={this.props.data.adults1} onChange={this.twoCallsAdult}>
-								<option>{1}</option>
-								<option>{2}</option>
-								</select>
+									<select id='selectionAdults' value={this.props.data.adults1} onChange={this.twoCallsAdult}>
+										<option>{1}</option>
+										<option>{2}</option>
+									</select>
 								</div>
 							</Slot>
 							<Slot>
 								<P>Children</P>
 								<P>(0-17)</P>
 								<select id='selectionChildren' value={this.props.data.children1} onChange={this.twoCallsChildren}>
-								<option>{0}</option>
-								<option>{1}</option>
-								<option>{2}</option>
+									<option>{0}</option>
+									<option>{1}</option>
+									<option>{2}</option>
 								</select>
 							</Slot>
 						</Item>
@@ -111,29 +111,29 @@ class Room1 extends React.Component{
 		}
 		else{
 			<ItemWrap>
-					<Heading>Room {this.state.room}</Heading>
-						<Item>
-							<Slot>
-								<P>Adults</P>
-								<P>(18+)</P>
-								<div>
+				<Heading>Room {this.state.room}</Heading>
+					<Item>
+						<Slot>
+							<P>Adults</P>
+							<P>(18+)</P>
+							<div>
 								<select id='selectionAdults' onChange={this.twoCallsAdult}>
-								<option>{1}</option>
-								<option>{2}</option>
+									<option>{1}</option>
+									<option>{2}</option>
 								</select>
-								</div>
-							</Slot>
-							<Slot>
-								<P>Children</P>
-								<P>(0-17)</P>
-								<select id='selectionChildren' onChange={this.twoCallsChildren}>
+							</div>
+						</Slot>
+						<Slot>
+							<P>Children</P>
+							<P>(0-17)</P>
+							<select id='selectionChildren' onChange={this.twoCallsChildren}>
 								<option>{0}</option>
 								<option>{1}</option>
 								<option>{2}</option>
-								</select>
-							</Slot>
-						</Item>
-				</ItemWrap>
+							</select>
+						</Slot>
+					</Item>
+			</ItemWrap>
 
 		}
 		return (

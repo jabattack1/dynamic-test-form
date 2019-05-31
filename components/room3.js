@@ -139,19 +139,19 @@ class Room3 extends React.Component{
 								<P>Adults</P>
 								<P>(18+)</P>
 								<div>
-								<select id='selectionAdults3' value={this.props.data.adults3} onChange={this.twoCallsAdult3}>
-								<option>{1}</option>
-								<option>{2}</option>
-								</select>
+									<select id='selectionAdults3' value={this.props.data.adults3} onChange={this.twoCallsAdult3}>
+										<option>{1}</option>
+										<option>{2}</option>
+									</select>
 								</div>
 							</Slot>
 							<Slot>
 								<P>Children</P>
 								<P>(0-17)</P>
 								<select id='selectionChildren3' value={this.props.data.children3} onChange={this.twoCallsChildren3}>
-								<option>{0}</option>
-								<option>{1}</option>
-								<option>{2}</option>
+									<option>{0}</option>
+									<option>{1}</option>
+									<option>{2}</option>
 								</select>
 							</Slot>
 						</Item>
@@ -163,23 +163,23 @@ class Room3 extends React.Component{
 					<Heading2Nay>Room {this.state.room}</Heading2Nay>
 						<ItemNay>
 							<Checkbox type='checkbox' onClick={() => this.getStuff()} />
-									<Slot>
-										<P>Adults</P>
-										<P>(18+)</P>
-										<select disabled>
+								<Slot>
+									<P>Adults</P>
+									<P>(18+)</P>
+									<select disabled>
 										<option>{1}</option>
 										<option>{2}</option>
-										</select>
-									</Slot>
-									<Slot>
-										<P>Children</P>
-										<P>(0-17)</P>
-										<select disabled>
+									</select>
+								</Slot>
+								<Slot>
+									<P>Children</P>
+									<P>(0-17)</P>
+									<select disabled>
 										<option>{0}</option>
 										<option>{1}</option>
 										<option>{2}</option>
-										</select>
-									</Slot>
+									</select>
+								</Slot>
 						</ItemNay>
 				</ItemWrapNay>
 		}
