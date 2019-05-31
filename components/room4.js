@@ -140,7 +140,7 @@ class Room4 extends React.Component{
 								<P>Adults</P>
 								<P>(18+)</P>
 								<div>
-								<select id='selectionAdults4' value={this.props.data.adults3} onChange={this.twoCallsAdult4}>
+								<select id='selectionAdults4' value={this.props.data.adults4} onChange={this.twoCallsAdult4}>
 								<option>{1}</option>
 								<option>{2}</option>
 								</select>
