@@ -32,7 +32,7 @@ const Layout = (props) => (
 	</Head>
 
 		<Sandwich>
-			<Top>Hotel App</Top>
+			<Top>HOTEL APP</Top>
 			<Sand>
 				{props.children}
 			</Sand>
