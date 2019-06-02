@@ -159,9 +159,9 @@ class Room3 extends React.Component{
 			}
 			else{
 			select = 
-				<ItemWrapNay>
-					<Heading2Nay>Room {this.state.room}</Heading2Nay>
-						<ItemNay>
+				<ItemWrap>
+					<Heading2>Room {this.state.room}</Heading2>
+						<Item>
 							<Checkbox type='checkbox' onClick={() => this.getStuff()} checked/>
 
 								<Slot>
@@ -184,8 +184,8 @@ class Room3 extends React.Component{
 									</select>
 								</Slot>
 
-						</ItemNay>
-				</ItemWrapNay>
+						</Item>
+				</ItemWrap>
 			}
 		}
 		else{
