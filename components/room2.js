@@ -131,6 +131,7 @@ class Room2 extends React.Component{
 
 		if(this.state.check===true){
 			console.log('true');
+			if(this.props.data !== undefined){
 			select = 
 				<ItemWrap>
 					<Heading2>Room {this.state.room}</Heading2>
@@ -157,6 +158,37 @@ class Room2 extends React.Component{
 							</Slot>
 						</Item>
 				</ItemWrap>
+			}
+			else{
+			select = 
+				<ItemWrapNay>
+					<Heading2Nay>Room {this.state.room}</Heading2Nay>
+						<ItemNay>
+							<Checkbox type='checkbox' onClick={() => this.getStuff()} checked/>
+
+								<Slot>
+									<P>Adults</P>
+									<P>(18+)</P>
+	
+									<select id='selectionAdults2' onChange={this.twoCallsAdult2}>
+										<option>{1}</option>
+										<option>{2}</option>
+									</select>
+	
+								</Slot>
+								<Slot>
+									<P>Children</P>
+									<P>(0-17)</P>
+									<select id='selectionChildren2' onChange={this.twoCallsChildren2}>
+										<option>{0}</option>
+										<option>{1}</option>
+										<option>{2}</option>
+									</select>
+								</Slot>
+
+						</ItemNay>
+				</ItemWrapNay>
+			}
 		}
 		else{
 			select = 
