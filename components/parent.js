@@ -7,7 +7,7 @@ import Room3 from '../components/room3.js';
 import Room4 from '../components/room4.js';
 
 const GridWrap = styled.div`
-	width: calc(100%);
+	margin:0 auto;
 `;
 
 
