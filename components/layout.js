@@ -11,7 +11,6 @@ const Sand = styled.div`
 	display: flex;
   	flex-wrap: wrap;
   	width: 100%;
-  	font-family:'verdana';
 `
 
 const Top = styled.div`
